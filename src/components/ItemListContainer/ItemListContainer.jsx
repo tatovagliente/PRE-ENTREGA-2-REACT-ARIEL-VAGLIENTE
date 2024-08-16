@@ -26,7 +26,7 @@ return (
     <h1>{greeting}</h1>
 
     
-    <ItemList product={products}/>
+    <ItemList products={products}/>
       
     
   </div>

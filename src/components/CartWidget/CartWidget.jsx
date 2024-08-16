@@ -1,9 +1,11 @@
 import "./CartWidget.css"
+import { BsCart2 } from "react-icons/bs";
 
 const CartWidget = () => {
   return (
     <div className="nav-cart">
-        <p>🛒Cart 2</p>
+        <p>2</p>
+        <BsCart2 />
     </div>
   )
 }
