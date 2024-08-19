@@ -5,6 +5,7 @@
       "nombre": "Producto 1",
       "imagen": "/assets/img/REMERA1.jpg",
       "detalle": "Detalle del producto 1",
+      "categoria": "Remeras",
       "precio": 100,
       "stock": 10
     },
@@ -13,6 +14,7 @@
       "nombre": "Producto 2",
       "imagen": "/assets/img/REMERA2.jpg",
       "detalle": "Detalle del producto 2",
+      "categoria": "Remeras",
       "precio": 200,
       "stock": 20
     },
@@ -20,6 +22,7 @@
       "id": 3,
       "nombre": "Producto 3",
       "imagen": "/assets/img/REMERA3.jpg",
+      "categoria": "Remeras",
       "detalle": "Detalle del producto 3",
       "precio": 300,
       "stock": 30
@@ -28,6 +31,7 @@
       "id": 4,
       "nombre": "Producto 4",
       "imagen": "/assets/img/JEAN1.jpg",
+      "categoria": "Jeans",
       "detalle": "Detalle del producto 4",
       "precio": 400,
       "stock": 40
@@ -36,6 +40,7 @@
       "id": 5,
       "nombre": "Producto 5",
       "imagen": "/assets/img/JEAN2.jpg",
+      "categoria": "Jeans",
       "detalle": "Detalle del producto 5",
       "precio": 500,
       "stock": 50
@@ -44,6 +49,7 @@
         "id": 6,
         "nombre": "Producto 6",
         "imagen": "/assets/img/JEAN3.jpg",
+        "categoria": "Jeans",
         "detalle": "Detalle del producto 6",
         "precio": 600,
         "stock": 60
@@ -52,6 +58,7 @@
           "id": 7,
           "nombre": "Producto 7",
           "imagen": "/assets/img/CAMPERA1.jpg",
+          "categoria": "Camperas",
           "detalle": "Detalle del producto 7",
           "precio": 700,
           "stock": 70
@@ -60,6 +67,7 @@
             "id": 8,
             "nombre": "Producto 8",
             "imagen": "/assets/img/CAMPERA2.jpg",
+            "categoria": "Camperas",
             "detalle": "Detalle del producto 8",
             "precio": 800,
             "stock": 80
@@ -68,6 +76,7 @@
               "id": 9,
               "nombre": "Producto 9",
               "imagen": "/assets/img/CAMPERA3.jpg",
+              "categoria": "Camperas",
               "detalle": "Detalle del producto 9",
               "precio": 900,
               "stock": 90
