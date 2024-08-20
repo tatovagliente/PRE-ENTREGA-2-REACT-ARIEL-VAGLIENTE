@@ -7,6 +7,7 @@ const Item = ({item}) => {
 
     <Link to={`/item/${item.id}`}>
         <div key={item.id} className="card">
+          <h2>{item.nombre}</h2>
         <img src={item.imagen} alt={item.nombre}/>
     </div>
     </Link>
