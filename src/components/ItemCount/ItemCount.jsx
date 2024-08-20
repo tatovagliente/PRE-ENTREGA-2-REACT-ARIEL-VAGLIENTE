@@ -10,7 +10,6 @@ const ItemCount = ({stock}) => {
         } ; 
     }
 
-    //en el 15 cuando veamos stock, podemos llamar para que no supere al numero que tengamos en stock
     const increment = () => {
         if (count <stock){
             setCount(count + 1);

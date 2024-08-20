@@ -1,33 +1,41 @@
 import "./ItemListContainer.css"
 import {useState, useEffect} from "react"
 import ItemList from '../ItemList/ItemList'
-
+import { useParams } from "react-router-dom"
+import Spinner from "../Spinner/Spinner"
 
 const ItemListContainer = ({greeting}) => {
+
   const [products, setProducts] = useState([])
+  const [loading, setLoading] = useState(true)
+
+  const {categoriaId} = useParams();
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('products.json')
+        const response = await fetch('/products.json')
         const data = await response.json()
-        setProducts(data)
+
+        const filteredProducts = categoriaId ? data.filter ((p) => p.categoria === categoriaId) : data;
+        setProducts(filteredProducts)
+
       } catch (error) {
         console.log(error)
+      }finally{
+        setLoading(false)
       }
     }
   
     fetchData()
-  }, [])
+  }, [categoriaId])
 
 return (
   <div className="container">
 
     <h1>{greeting}</h1>
 
-    
-    <ItemList products={products}/>
-      
+    {loading ? <Spinner/> : <ItemList products={products} />}
     
   </div>
 )
